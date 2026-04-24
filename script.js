@@ -3,12 +3,15 @@
 // ========================================
 function toggleMenu() {
   const menu = document.getElementById('mobileMenu');
+  const btn = document.querySelector('.mobile-menu-btn');
   menu.classList.toggle('active');
+  btn.classList.toggle('active');
 }
 
 document.querySelectorAll('.mobile-menu a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('mobileMenu').classList.remove('active');
+    document.querySelector('.mobile-menu-btn').classList.remove('active');
   });
 });
 

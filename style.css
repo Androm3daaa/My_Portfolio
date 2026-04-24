@@ -778,10 +778,22 @@ footer {
 
 .mobile-menu-btn span {
   display: block;
-  width: 28px;
+  width: 24px;
   height: 2px;
   background: #fff;
   transition: var(--transition);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .mobile-menu {
@@ -818,10 +830,30 @@ footer {
 
 @media (max-width: 768px) {
   .nav-links, .status-badge-wrapper { display: none; }
-  .mobile-menu-btn { display: flex; }
+  .mobile-menu-btn { 
+    display: flex;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
   .projects-grid { grid-template-columns: 1fr; }
   .philosophy-grid { grid-template-columns: 1fr; }
   .hero-wrapper { flex-direction: column; text-align: center; }
   .hero-image { order: -1; }
   .btn { width: 100%; justify-content: center; }
+
+  /* Scale down email button on mobile */
+  .email-btn {
+    padding: 12px 16px;
+    gap: 10px;
+    width: 100%;
+    max-width: 340px;
+  }
+  .email-text {
+    font-size: 0.875rem;
+  }
+  .email-hint {
+    display: none; /* Hide hint on small screens to save space */
+  }
 }
