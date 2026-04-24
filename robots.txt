@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://androm3daaa-my-portfolio.vercel.app/sitemap.xml
+Sitemap: https://my-portfolio-janreybalabis.vercel.app/sitemap.xml
