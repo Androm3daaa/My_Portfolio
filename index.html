@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jan Rey Balabis — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="scroll-progress"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">janrey<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="status-badge-wrapper">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Available
+        </div>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#philosophy" onclick="toggleMenu()">Philosophy</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="status-dot"></span>
+            Hello, I'm
+          </div>
+          <h1 class="hero-name">
+            <span class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </h1>
+          <p class="hero-role">
+            Developer
+          </p>
+          <p class="hero-desc">
+            Building secure, scalable, and creative digital solutions. 
+            I focus on detail-driven interfaces, clean architecture, and 
+            experiences that actually work.
+          </p>
+          <div class="hero-location">📍 Philippines</div>
+
+          <div class="tech-stack">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JAVASCRIPT</span>
+            <span class="tech-pill">PYTHON</span>
+            <span class="tech-pill">C++</span>
+            <span class="tech-pill">JAVA</span>
+          </div>
+
+          <div class="hero-cv" style="margin: 2rem 0;">
+            <a href="JANREY BALABIS - CV.pdf" target="_blank" class="btn btn-primary">
+              Download CV
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-image-border"></div>
+          <img src="profile.jpg" alt="Jan Rey Balabis" />
+          <div class="hero-image-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title">Projects that matter.</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Empty Slot 1 -->
+        <div class="project-card-mac">
+          <div class="mac-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <h3 class="card-title">[ Empty Slot ]</h3>
+          <p class="card-description">
+            No projects have been deployed here yet. Currently focusing on mastering the core fundamentals of development.
+          </p>
+          <div class="card-tags">
+            <span class="card-tag">Learning</span>
+            <span class="card-tag">Building</span>
+          </div>
+          <div class="code-editor">
+            <pre><code>// Current Status:
+const projects = [];
+const learning = true;
+
+if (projects.length === 0) {
+  console.log("Forge is open for ideas.");
+}</code></pre>
+          </div>
+        </div>
+
+        <!-- Empty Slot 2 -->
+        <div class="project-card-mac">
+          <div class="mac-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <h3 class="card-title">[ Empty Slot ]</h3>
+          <p class="card-description">
+            The forge is waiting for its first major build. Mastering the stack before shipping the first project.
+          </p>
+          <div class="card-tags">
+            <span class="card-tag">Research</span>
+            <span class="card-tag">Setup</span>
+          </div>
+          <div class="code-editor">
+            <pre><code>/* 
+ * System under construction.
+ * No data found in this directory.
+ */
+ls -la ./projects
+# total 0</code></pre>
+          </div>
+        </div>
+
+        <!-- Empty Slot 3 -->
+        <div class="project-card-mac">
+          <div class="mac-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <h3 class="card-title">[ Empty Slot ]</h3>
+          <p class="card-description">
+            Reserved for a future high-performance application. Currently experimenting with local LLMs and agent frameworks.
+          </p>
+          <div class="card-tags">
+            <span class="card-tag">Experimenting</span>
+          </div>
+          <div class="code-editor">
+            <pre><code>// Thinking...
+await brainstorming();
+// No project committed yet.</code></pre>
+          </div>
+        </div>
+
+        <!-- Empty Slot 4 -->
+        <div class="project-card-mac">
+          <div class="mac-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <h3 class="card-title">[ Empty Slot ]</h3>
+          <p class="card-description">
+            Documentation and foundation building in progress. This slot will be filled once the code meets the standard.
+          </p>
+          <div class="card-tags">
+            <span class="card-tag">Locked</span>
+          </div>
+          <div class="code-editor">
+            <pre><code>git status
+# On branch main
+# nothing to commit, 
+# working tree clean</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section id="philosophy">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Philosophy</div>
+        <h2 class="section-title">Interfaces you can feel.</h2>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="philosophy-item">
+          <div class="philosophy-item-inner">
+            <div class="philosophy-icon">⚡</div>
+            <h3 class="philosophy-title">Motion</h3>
+            <p class="philosophy-desc">
+              Micro-interactions and subtle movement that confirms intent — 
+              never distracting, always purposeful.
+            </p>
+          </div>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-item-inner">
+            <div class="philosophy-icon">🎯</div>
+            <h3 class="philosophy-title">Type</h3>
+            <p class="philosophy-desc">
+              Typography that guides the eye and establishes clear hierarchy. 
+              Every letter serves a purpose.
+            </p>
+          </div>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-item-inner">
+            <div class="philosophy-icon">💬</div>
+            <h3 class="philosophy-title">Feedback</h3>
+            <p class="philosophy-desc">
+              Clear, immediate responses to user actions. 
+              The interface should always communicate what's happening.
+            </p>
+          </div>
+        </div>
+        <div class="philosophy-item">
+          <div class="philosophy-item-inner">
+            <div class="philosophy-icon">✨</div>
+            <h3 class="philosophy-title">Craft</h3>
+            <p class="philosophy-desc">
+              I sweat the tiny stuff — spacing, timing, transitions. 
+              Details make the difference between good and great.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="contact-heading">Let's build something that actually works.</h2>
+        <p class="contact-sub">
+          Open to freelance, collaborations, and full-time opportunities. 
+          Let's create something amazing together.
+        </p>
+        <div class="contact-actions">
+          <div class="email-btn" onclick="copyEmail()">
+            <span class="email-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </span>
+            <span class="email-text">janreybalabis23@gmail.com</span>
+            <span class="email-hint">Tap to copy</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Androm3daaa" target="_blank" class="social-link" title="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/Janrey_Balabis" target="_blank" class="social-link" title="Twitter/X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        © 2026 Jan Rey Balabis · Philippines
+      </div>
+      <div class="footer-made">
+        Made with ❤️ and lots of ☕
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
